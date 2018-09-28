@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    display: none;
+}
+
+.start {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+.start img {
+    margin: 3% auto;
+}
+
+.btnplay {
+    cursor: pointer;
+}
+
+/* ----------- */
+
+.life {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.score {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 40;
+}
+
+.bgscore {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #4caf50;
+    z-index: 10;
+    width: 45px;
+    height: 20vh;
+    transition: height 1s;
+}
+
+.you {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -45px;
+}
+
+.keys {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* ----------- */
+.end {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.win, .loose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.win {
+    background-color: #4caf50;
+}
+
+.loose {
+    background-color: #c62f2f;
+}
+
+h3 {
+    font-size: 700%;
+    font-family: 'ROBOTO', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+button {
+    font-size: 25px;
+    font-family: 'ROBOTO', sans-serif;
+    font-weight: bold;
+    border: none;
+    width: 17%;
+    height: 9%;
+    margin: 50px auto;
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+}
+
+button:hover {
+    filter: invert();
+}
+
+.divalien {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.divalien2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.ennemies {
+    position: absolute;
+    top: 5%;
+    left: 24%;
+    transition: left 5s;
+}
+
+.divalien > img {
+    width: 5%;
+    height: 5%;
+}
+
+.divalien2 > img {
+    width: 9%;
+    height: 9%;
+}
+
+.dontshow {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.tir-hidden {
+    display: none;
+}

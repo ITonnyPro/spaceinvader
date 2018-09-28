@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <title>Space Invaders</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
+        <!-- FAVICON -->
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- FONT -->
+    </head>
+    
+    <body>
+        <section class="start">
+            <header>
+                <h2>SPACE INVADERS</h2>
+                <img src="images/title.png" alt="logo space invaders" width="970" height="93">
+            </header>
+            <img src="images/startimg.png" alt="fusé qui tir sur un vaisseau" width="1223" height="280">
+            <img src="images/btnplay.png" alt="bouton jouer. Texte blanc fond noir" width="322" height="112" class="btnplay" type="button">
+        </section>
+        
+        <section class="game dontshow">
+            <div class="interface">
+                <img src="images/score.png" alt="barre de niveau du score" width="62" height="902" class="score">
+                <div class="bgscore"></div>
+                <img src="images/life3.png" alt="barre de pourcentage de vie" width="222" height="212" class="life">
+            </div>
+            <div class="keys">
+                <img src="images/keys.png" alt="touches exemples" width="234" height="151">
+            </div>
+            <div class="ennemies">
+            </div>
+            <div class="you">
+                <img src="images/you.png" alt="vaisseau spatiale rouge et gris" width="90" height="123">
+            </div>
+        </section>
+        <section class="end dontshow">
+            <div class="win">
+                <h3>YOU WIN</h3>
+                <button type="button">REJOUER</button>
+            </div>
+            <div class="loose">
+                <h3>GAME OVER</h3>
+                <button type="button">REJOUER</button>
+            </div>
+        </section>
+        <script src="js/game.js"></script>
+    </body>
+</html>
